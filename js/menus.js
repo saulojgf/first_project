@@ -147,7 +147,6 @@ hdr.btn_catego.addEventListener("click", showCategoMenu);
 hdr.btn_closeMenu.addEventListener("click", hiddenCategoMenu);
 hdr.btn_shopCart.addEventListener("click", showCart);
 hdr.btn_iconMenu.addEventListener("click", showMenu);
-
 document.addEventListener("click", closeElements);
 main.ctner_articles.contentDocument.addEventListener("click", closeElements);
 
@@ -256,7 +255,7 @@ fetch("js/products.json")
         const addCartBtns = getAddCartBtns();
         addListenerAddCartBtns(addCartBtns);
         // resizeIframe();
-        setTimeout(resizeIframe, 2500);
+        setTimeout(resizeIframe, 2000);
         // console.log(iframeBody);
     })
     // .then(resizeIframe())
