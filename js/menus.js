@@ -256,7 +256,7 @@ fetch("js/products.json")
         const addCartBtns = getAddCartBtns();
         addListenerAddCartBtns(addCartBtns);
         // resizeIframe();
-        setTimeout(resizeIframe, 1500);
+        setTimeout(resizeIframe, 2000);
         // console.log(iframeBody);
     })
     // .then(resizeIframe())
