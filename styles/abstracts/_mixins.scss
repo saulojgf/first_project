@@ -1,0 +1,67 @@
+@mixin flex($dic: null, $justify-cont: null, $align-items: null, $gap: null) {
+
+    display: flex;   
+
+    @if $gap != null {
+        gap: $gap;
+    }
+    @if $dic != null {
+        flex-direction: $dic;
+    }
+    @if $justify-cont != null {
+        justify-content: $justify-cont;
+    }
+    @if $align-items  != null {
+        align-items: $align-items;
+    }
+
+}
+
+@mixin grid($clms: null, $rows: null) {
+
+    display: grid;
+
+    @if $clms != null {
+        grid-template-columns: $clms;
+    }
+    @if $rows != null {
+        grid-template-rows: $rows;
+    } 
+}
+
+@mixin gridCont ($gtc: null, $gtr: null, $gac: null, $gar: null, $gap: 10px) {
+    display: grid;
+    gap: $gap;
+    @if $gtc != null {
+        grid-template-columns: $gtc;
+    } @else {
+        grid-auto-columns: $gac;
+    }
+    
+    @if $gtr != null {
+        grid-template-rows: $gtr;
+    } @else {
+        grid-auto-rows: $gar;
+    }
+}
+
+// 1024
+@mixin table_pro { 
+    @media screen and (max-width: 64rem){
+        @content
+    };
+}
+
+// 832
+@mixin table {
+    @media screen and (max-width: 52rem) {
+        @content
+    };
+}
+
+// 512
+@mixin phone {
+    @media screen and (max-width: 34rem) {
+        @content
+    };
+}

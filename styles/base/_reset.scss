@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: clamp(0.5rem, 3vw, 1rem);
+}
+
+button {
+    background: none;
+    border: none;
+}
+
+a {
+    color: unset;
+    text-decoration: none;
+}

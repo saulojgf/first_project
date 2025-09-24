@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- <script src="js/features.js" defer></script> -->
+    <script src="js/menus.js" defer></script>
+    <script src="js/features.js" defer></script>
+    <title>Ecommer Project</title>
+</head>
+<body>
+    <header id="header" class="header">
+
+        <div id="ctner_main" class="header__main-ctner">
+            <figure id="ctner_logo" class=" header__logo">
+                <img class="logo" src="img/logos/logo_noBg.png" alt="logo">
+            </figure>
+            
+            <nav id="ctnerBtns_left" class="header__buttonsBlock">
+                <span id="btn_iconMenu" class="material-symbols-outlined">menu</span>
+                <nav id="ctner_allBtnsMenu" class="ctner_allBtnMenu">
+                    <nav id="ctner_categoBtnMenu" class="header__ctner-categoBtnMenu">
+                        <button id="btn_catego" class="header__btn">
+                            Categories &#9207;
+                        </button>
+                        <nav id="ctner_menuCatego" class="header__menu-ctner">
+                            <ul class="header__menu-vertical">
+                                <li class="menu-hdr"><span></span><button id="btn_closeMenu">&#10006;</button></li>
+                                <li class="menu-item">&#11162; Clothing</li>
+                                <li class="menu-item">&#11162; Footwear</li>
+                                <li class="menu-item">&#11162; Accessories</li>
+                                <li class="menu-item">&#11162; Home & Living</li>
+                                <li class="menu-item">&#11162; Gifts</li>
+                                <li class="menu-item">&#11162; Books & Stationery</li>
+                                <li class="menu-item">&#11162; Electronics</li>
+                                <li class="menu-item">&#11162; Kitchen & Dining</li>
+                                <li class="menu-item">&#11162; Furniture</li>
+                                <li class="menu-item">&#11162; Beauty & Personal Care</li>
+                            </ul>
+                        </nav>
+                    </nav>
+                    <button id="btn_bestSell" class="header__btn header__btn-bestSell">Best-Selling Items</button>
+                    <button id="btn_newin" class="header__btn header__btn-newin">New In</button>
+                </nav>
+ 
+            </nav>
+
+            <search id="ctner_search" class="header__search-ctner">
+                <input id="input" type="search" name="" placeholder="Find It ...">
+                <button id="btnSearch" class="search__btn"><span class="material-symbols-outlined">search</span></button>
+            </search>
+
+            <nav id="ctnerBtns_right" class="header__buttonsBlock">
+                <button id="btn_user" class="header__btn">
+                    <span class="user__icon material-symbols-outlined">person</span>
+                    <span class="user__nickname">sjgarcia</span>
+                </button>
+                <button id="btn_support" class="header__btn">Support</button>
+                <button id="btn_langue" class="header__btn"><span>English</span><img class="icon-s" src="img/icons/united-kingdom.png" alt=""></button>
+                <nav class="header__ctner-btnCart">
+                    <button id="btn_shopCart" class="header__btn"><span class="material-symbols-outlined">shopping_cart</span><span id="items_inCart"></span></button>
+                    <nav id="ctner_itemsCart" class="header__shoppingCart-ctner">
+                        <div class="shoppingCart-hdr">
+                            <h3>Your Shopping-Cart</h3>
+                            <button class="cart__btn-close"><span class="material-symbols-outlined">disabled_by_default</span></button>
+                        </div>
+                    </nav>
+                </nav>
+            </nav>
+        </div>
+    </header>
+    <main id="main" class="main">
+        <div id="carousel" class="carousel">
+            <div id="ctner_tracker" class="tracker-ctner">
+                <div class="carousel-slide">
+                    <img src="img/banners/2816x1000/banner_accesories.webp" alt="slide 0">
+                </div>
+                <div class="carousel-slide">
+                    <img src="img/banners/2816x1000/banner_electronic.webp" alt="slide 1">
+                </div>
+                <div class="carousel-slide">
+                    <img src="img/banners/2816x1000/banner_footwear.webp" alt="slide 2">
+                </div>
+                <div class="carousel-slide">
+                    <img src="img/banners/2816x1000/banner_home.webp" alt="slide 3">
+                </div>
+            </div>
+            <button id="btn_prev" class="carousel__btn carousel__btn-Prev">&#10094;</button>
+            <button id="btn_next" class="carousel__btn carousel__btn-Next">&#10095;</button>
+        </div>
+        <iframe id="ctner_articles" class="main__articles-ctner" src="pages/promo.html" frameborder="0" scrolling = "no"></iframe>
+    </main>
+    <footer></footer>
+</body>
+</html>

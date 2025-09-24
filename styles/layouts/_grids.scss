@@ -1,0 +1,8 @@
+@use "../abstracts/mixins" as *;
+
+.grid {
+    @include gridCont($gtc: repeat(auto-fit, minmax(300px, 1fr)));
+    @include table_pro {
+        @include gridCont($gtc: repeat(auto-fit, minmax(150px, 1fr)));
+    }
+}

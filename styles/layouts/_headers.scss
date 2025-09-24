@@ -1,0 +1,222 @@
+@use "../abstracts/mixins" as *;
+@use "../abstracts/variables" as *;
+
+.header {
+    @include flex($justify-cont: center);
+    width: $hdr_width;
+    height: $hdr_height;
+    color: $hdr_txtcolor;
+    background-color: $hdr_bgcolor;
+    // position: sticky;
+
+    @include table_pro {
+        height: 36px;
+    }
+    
+    &__logo {
+        height: 100%;
+        // outline: auto;
+        order: 1;
+    }
+
+    #ctnerBtns_left {
+        @include table_pro {
+            order: 0;
+            z-index: 1;
+            min-width: unset;
+        }
+        min-width: 360px;
+        order: 2;
+    }
+
+    #ctnerBtns_right {
+        order: 4;
+    }
+
+    #btn_iconMenu {
+        display: none;
+        @include table_pro {
+            display: unset;
+        }
+    }
+
+    #btn_support, #btn_langue, .user__nickname {
+        @include table_pro {
+            display: none;
+        }
+    }
+
+    // &__ctner-categoBtnMenu, &__btn-bestSell, &__btn-newin  {
+    //     position: absolute;
+    //     top: 35px;
+    // }
+
+    .ctner_allBtnMenu {
+        display: inherit;
+        @include table_pro {
+            display: none;
+            position: absolute;
+            top: 35px;
+            left: 0;
+            background-color: $hdr_bgcolor;
+            width: 50%;
+            button {
+                justify-content: start;
+                width: 100%;
+                outline: none;
+            }
+        }
+    }
+
+    &__main-ctner{
+        @include flex($justify-cont:space-between, $align-items: center);
+        width: $hdr_mainCtner-width;
+        height: inherit;
+        min-width: $hdr_mainCtner-minWidth;
+        max-width: $hdr_mainCtner-maxWidth;
+        @include table_pro {
+            width: 100%;
+            min-width: unset;
+            max-width: unset;
+        }
+
+    }
+
+    &__buttonsBlock{
+        @include flex($align-items:center, $gap:10px);
+        height: inherit;
+        padding-inline: 10px;
+    }
+
+
+
+    &__search-ctner {
+        @include flex($align-items: center, $gap:5px);
+        background-color: white;
+        outline: auto;
+        height: 30px;
+        width: 300px;
+        border-radius: 15px;
+        padding-left: 25px;
+        order: 3;
+        input {
+            all:unset;
+            height: inherit;
+            width: 100%;
+        }
+
+        input::placeholder {
+            color: $yale-blue;
+            // opacity: 0.5;
+        }
+        @include table_pro {
+            display: none;
+        }
+        @include table {
+            display: none;
+        }
+
+    }
+
+    &__menu-ctner {
+        position: absolute;
+        z-index: 1;
+        top: $hdr_height;
+        background-color: $hdr_bgcolor;
+        border-left: 1px solid black;
+        border-right: 1px solid black;
+        display: none;
+        @include table_pro {
+            top: 0px;
+            left: 100%;
+            width: 100%;
+        }
+    }
+
+    &__ctner-btnCart{
+        position: relative;
+        @include table_pro {
+            position: static;
+        }
+    }
+
+    &__shoppingCart-ctner{
+        position: absolute;
+        z-index: 1;
+        width: 500px;
+        height: auto;
+        min-height: 150px;
+        top: 50px;
+        right: -10px;
+        background-color: $hdr_bgcolor;
+        display: none;
+        // outline: auto;
+
+        @include table_pro {
+            top: 35px;
+            right: 0;
+            width: 100%;
+        }
+
+        .shoppingCart-hdr {
+            @include flex($justify-cont: space-between, $align-items:center);
+            padding-inline: 10px;
+            height: 30px;
+            border-bottom: 1px solid rgb(128, 128, 128);
+            // outline: auto;
+        }
+        .cart {
+            &--active {
+                right: 0;
+                transition: right 0.5s;
+            }
+
+            &__item-container {
+                height: 70px;
+                padding-inline: 5px;
+                padding-block: 5px;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                border-bottom: 1px solid rgb(128, 128, 128);
+                // * {outline: 1px solid red;}
+            }
+
+            &__icon-trash{
+                cursor: pointer;
+            }
+        }
+
+        .item {
+            &__checkbox{
+                width: 20px;
+            }
+
+            &__image {
+                width: 100px;
+                height: 100%;
+                object-fit: contain;
+            }
+
+            &__description{
+                width: 200px;
+            }
+
+            &__quantity {
+                text-align: center;
+                width: 50px;
+            }
+
+            &__price{
+                text-align: center;
+                width: 100px;
+            }
+        }
+
+    }
+
+    .active {
+        display: unset;
+    }
+}
+

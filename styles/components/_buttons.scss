@@ -1,0 +1,26 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+
+button[class*="__btn"] {
+    @include flex($justify-cont: center, $align-items:center, $gap: 5px);
+    padding-inline: 10px;
+    border-radius: 5px;
+    height: 30px;
+    cursor: pointer;
+    outline: 1px solid white;
+}
+
+button[class*="__btn--blue"] {
+    color: $btn_blue-txtColor;
+    background-color: $btn_blue-bgColor;
+}
+
+// button[class*="__btn--orange"] {
+//     color: $txt_btn-orange;
+//     background-color: $bg_btn-orange;
+// }
+
+// ---------- Haeder buttons ----------
+
+

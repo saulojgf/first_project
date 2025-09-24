@@ -1,0 +1,50 @@
+@use "../abstracts/mixins" as *;
+
+ul[class*="__menu"] {
+    // padding-inline: 10px;
+    list-style: none;
+}
+
+ul[class*="__menu-vertical"] {
+    .menu-hdr{
+        @include flex($justify-cont:space-between);     
+    }
+    li {
+        padding: 2px 10px;
+        border-bottom: 1px solid rgb(70, 70, 70);
+    }
+}
+
+
+ul[class*="--around-xtend"] {
+    justify-content: space-around;
+}
+
+ul[class*="--btween-xtend"] {
+    justify-content: space-between;
+}
+
+ul[class*="--evenly-xtend"] {
+    justify-content: space-evenly;
+}
+
+ul[class*="--evenly-grow"] {
+    li {
+        display: inherit;
+        align-items: inherit;
+        height: 100%;
+        flex-grow: 1;
+        // outline: auto;
+    }
+    li > a {
+        display: inherit;
+        align-items: inherit;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+        // outline: 2px dashed rgb(67, 180, 1);s
+    }
+    li > a:hover {
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+}

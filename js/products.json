@@ -1,0 +1,144 @@
+[
+  {
+    "id": "GX-2025",
+    "name": "Smartphone Galaxy X",
+    "description": "Smartphone potente con cámara triple y 5G.",
+    "price": 899,
+    "category": "Electrónica",
+    "image": "../img/products/smartphone_galaxy.webp",
+    "details": {
+      "size": "6.7\" pantalla OLED",
+      "color": "Negro",
+      "contents": "128GB almacenamiento, 8GB RAM",
+      "technology": "5G, reconocimiento facial, cámara triple 108MP",
+      "battery": "4500mAh, carga rápida"
+    }
+  },
+  {
+    "id": "RF-AirMax",
+    "name": "Zapatillas RunFast",
+    "description": "Zapatillas ligeras y transpirables para correr.",
+    "price": 120,
+    "category": "Calzado",
+    "image": "../img/products/zapatillas_runfast.webp",
+    "details": {
+      "size": "38-44",
+      "color": "Blanco con detalles azules",
+      "contents": "Material sintético y malla",
+      "technology": "Suela anti-impacto, ligera y transpirable"
+    }
+  },
+  {
+    "id": "EXP-50L",
+    "name": "Mochila Explorer",
+    "description": "Mochila resistente al agua con espacio para laptop.",
+    "price": 65,
+    "category": "Accesorios",
+    "image": "../img/products/mochilaexplorer.webp",
+    "details": {
+      "size": "50x30x20cm",
+      "color": "Verde militar",
+      "contents": "Compartimento para laptop, bolsillos laterales",
+      "material": "Nylon resistente al agua"
+    }
+  },
+  {
+    "id": "SmartLight-20",
+    "name": "Lámpara LED Smart",
+    "description": "Lámpara inteligente con control por voz.",
+    "price": 45,
+    "category": "Hogar",
+    "image": "../img/products/lampar_led_smart.webp",
+    "details": {
+      "size": "20cm alto",
+      "color": "Blanco",
+      "contents": "Luz regulable, base antideslizante",
+      "technology": "Conexión Wi-Fi, control por app y voz"
+    }
+  },
+  {
+    "id": "MTB-XR17",
+    "name": "Bicicleta MountainPro",
+    "description": "Bicicleta de montaña con frenos de disco.",
+    "price": 750,
+    "category": "Deportes",
+    "image": "../img/products/Bicicleta_MountainPro.webp",
+    "details": {
+      "size": "Marco 17\"/19\"",
+      "color": "Rojo y negro",
+      "contents": "Frenos de disco, suspensión delantera",
+      "technology": "Cambio de velocidades Shimano, llantas resistentes"
+    }
+  },
+  {
+    "id": "ELG-50F",
+    "name": "Perfume Elegance",
+    "description": "Fragancia floral fresca y elegante.",
+    "price": 70,
+    "category": "Belleza",
+    "image": "../img/products/Perfume_elegance.webp",
+    "details": {
+      "size": "50ml",
+      "contents": "Fragancia floral",
+      "color": "Transparente",
+      "technology": "Spray atomizador de alta presión"
+    }
+  },
+  {
+    "id": "OXF-CL25",
+    "name": "Camisa Oxford",
+    "description": "Camisa clásica de algodón azul claro.",
+    "price": 35,
+    "category": "Ropa",
+    "image": "../img/products/camisa_oxford.webp",
+    "details": {
+      "size": "S, M, L, XL",
+      "color": "Azul claro",
+      "contents": "100% algodón",
+      "details": "Botones de madreperla, corte clásico"
+    }
+  },
+  {
+    "id": "TM-105PRO",
+    "name": "Tablet TabMaster",
+    "description": "Tablet profesional con lápiz digital.",
+    "price": 499,
+    "category": "Electrónica",
+    "image": "../img/products/tablet_tabmaster.webp",
+    "details": {
+      "size": "10.5\"",
+      "color": "Gris espacial",
+      "contents": "256GB almacenamiento, 6GB RAM",
+      "technology": "Pantalla táctil, lápiz digital incluido, conectividad Wi-Fi/4G"
+    }
+  },
+  {
+    "id": "CP-5SET",
+    "name": "Juego de Ollas ChefPro",
+    "description": "Juego de ollas de acero inoxidable 5 piezas.",
+    "price": 150,
+    "category": "Cocina",
+    "image": "../img/products/juego-de-ollas.webp",
+    "details": {
+      "size": "5 piezas (olla grande, mediana, pequeña, sartén, cacerola)",
+      "color": "Negro",
+      "contents": "Acero inoxidable con tapa de vidrio",
+      "technology": "Apto para inducción y horno"
+    }
+  },
+  {
+    "id": "SF-42S",
+    "name": "Reloj SmartFit",
+    "description": "Smartwatch con GPS y monitor cardíaco.",
+    "price": 220,
+    "category": "Tecnología",
+    "image": "../img/products/reloj-smartfit.webp",
+    "details": {
+      "size": "42mm",
+      "color": "Negro",
+      "contents": "Correa de silicón",
+      "technology": "Monitor de ritmo cardíaco, GPS, notificaciones, resistente al agua"
+    }
+  }
+]
+

@@ -1,0 +1,34 @@
+
+// -----------------------------
+// Image like an icon
+// -----------------------------
+img[class*="icon"] {
+    display: inline-block;
+    height: inherit;
+    width: inherit;
+}
+
+img[class*="icon-s"] {
+    height: auto;
+    width: 20px;
+}
+
+img[class*="icon-m"] {
+    height: auto;
+    width: 25px;
+}
+
+img[class*="icon-l"] {
+    height: auto;
+    width: 30px;
+}
+
+img[class*="icon-xl"] {
+    height: auto;
+    width: 35px;
+}
+
+img[class*="icon-xxl"] {
+    height: auto;
+    width: 40px;
+}

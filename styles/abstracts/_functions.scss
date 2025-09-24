@@ -1,0 +1,3 @@
+@function sqr($measure, $percentage) {
+    @return $measure * (calc(($percentage / 1%) / 100));
+}

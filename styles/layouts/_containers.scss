@@ -1,0 +1,74 @@
+@use "../abstracts/mixins";
+
+// flex Containers
+.d-f {
+    @include mixins.flex();
+}
+
+.d-f_col {
+    @include mixins.flex($dic: column);
+}
+
+// justify-content: center
+.d-f_center {
+    @include mixins.flex($justify-cont: center);
+}
+
+.d-f_right {
+    @include mixins.flex($justify-cont: end);
+}
+
+.d-f_left {
+    @include mixins.flex($justify-cont: start);
+}
+
+.d-f_left-center {
+    @include mixins.flex($align-items: center);
+}
+
+
+// justify-content: end + align-items: X
+.d-f_right-top {
+    @include mixins.flex($justify-cont: end, $align-items: flex-start);
+}
+
+.d-f_right-bottom {
+    @include mixins.flex($justify-cont: end, $align-items: flex-end);
+}
+
+.d-f_right-center {
+    @include mixins.flex($justify-cont: end, $align-items: center);
+}
+
+.d-f_right-basline {
+    @include mixins.flex($justify-cont: end, $align-items: baseline);
+}
+
+
+
+// justify-content: center + align-items: X
+.d-f_center-top {
+    @include mixins.flex($justify-cont: center, $align-items: flex-start);
+}
+
+.d-f_center-bottom {
+    @include mixins.flex($justify-cont: center, $align-items: flex-end);
+}
+
+.d-f_center-center {
+    @include mixins.flex($justify-cont: center, $align-items: center);
+}
+
+// justify-content: space-between + align-items: X
+.d-f_space_between-top {
+    @include mixins.flex($justify-cont: space-between, $align-items: flex-start);
+}
+
+.d-f_space_between-bottom {
+    @include mixins.flex($justify-cont: space-between, $align-items: flex-end);
+}
+
+.d-f_space_between-center {
+    @include mixins.flex($justify-cont: space-between, $align-items: center);
+}
+

@@ -1,0 +1,49 @@
+@use "functions";
+
+// Fundamental Colors - summer
+$rich-black:        #000814ff;
+$oxford-blue:       #001d3dff;
+$yale-blue:         #003566ff;
+$sky-blue:          #8ecae6ff;
+$blue-green:        #219ebcff;
+$prussian-blue:     #023047ff;
+$mikado-yellow:     #ffc300ff;
+$gold:              #ffd60aff;
+$selective-yellow:  #ffb703ff;
+$ut-orange:         #fb8500ff;
+$white:             #ffffffff;
+$black:             #000000ff;
+
+// ---------- Backgrounds Colors ---------------
+$hdr_bgcolor: $sky-blue;
+$hdr_menu-bgcolor: $sky-blue;
+
+// ---------- Text Color -----------------------
+$hdr_txtcolor: $yale-blue;
+$hdr_menu-txtcolor: $white;
+
+// -------------------- Dimensions --------------------
+// ------------------- Padding Standards --------------
+
+
+// --------------- Header Dimesions -------------------
+// ---------- Header Containers -----------------------
+$hdr_height: 70px;
+$hdr_width: 100%;
+$hdr_mainCtner-width: 95%;
+$hdr_mainCtner-maxWidth: 1728px;
+$hdr_mainCtner-minWidth: 1230px;
+
+// ---------- Header items ---------------
+
+// ---------- Button Colors --------------
+// ----- Background Button Colors ----- 
+$btn_blue-bgColor: $yale-blue;
+// ----- Text Button Colors -----
+$btn_blue-txtColor: $white;
+
+
+// ---------- Links Colors ------------
+
+
+
